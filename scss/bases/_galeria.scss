@@ -1,0 +1,72 @@
+/*Galeria*/
+
+
+
+
+
+.galeria {
+    h2 {
+        margin-top: 50px;
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .row {
+        display: flex;
+        padding: 5px;
+        flex-wrap: wrap;
+
+    .colum {
+        flex: 25%;
+        padding: 5px;
+
+    img {
+        width: 100%;
+        margin-top: 5px;
+            }
+        } 
+    }
+}
+
+.videos {
+    h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    }
+
+    div {
+    width: 80%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    .video {
+        @include video;
+        }
+    }
+}
+
+/*Media Query Galeria*/
+
+
+@media (max-width:1050px){
+    .galeria .row .colum{
+        flex: 50%;
+    }
+} 
+
+
+
+@media (max-width:650px){
+    .galeria .row .colum{
+        flex: 100%;
+    }
+}

@@ -1,0 +1,38 @@
+/*mixin*/
+
+@mixin home{
+    margin: 80px auto;
+    width: 80%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+@mixin carrera{
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    border-radius: 50px;
+}
+
+@mixin video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 20px;
+}
+
+
+@mixin familia{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin datos{
+    margin-top: 50px;
+    margin: 70px;
+    display: flex;
+}

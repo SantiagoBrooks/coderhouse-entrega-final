@@ -1,0 +1,43 @@
+/*HOME*/
+
+
+
+.main-Home {
+    @include home;
+    p {
+    text-align: justify-all;
+    font-size: xx-large;
+    }
+
+    img{
+        height: 490px;
+    }
+}
+
+/*Media Query Home*/
+
+
+@media (max-width:1250px){
+    .main-Home{
+        display: block;
+        p{ 
+            font-size: 30px;
+        }
+        img{
+            height: 400px;
+        }
+    }
+}
+
+
+@media (max-width:850px){
+    .main-Home{
+        display: block;
+        p{ 
+            font-size: 20px;
+        }
+        img{
+            height: 250px;
+        }
+    }
+}

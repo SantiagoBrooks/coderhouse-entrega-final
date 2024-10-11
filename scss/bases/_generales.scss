@@ -1,0 +1,44 @@
+
+/*estilos generales*/
+
+header {
+    a {
+        margin-top: 20px;
+    }
+    
+    nav {
+        ul {
+                margin: 20px;
+                text-align: center;
+                padding: 10px;
+            }
+        }
+    }
+
+body{
+    background-color: $color-principal;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 5rem;
+    font-size: 'Merriweather Sans';
+    font-size: 100px;
+    color: #19191b;
+    @media (max-width:850px){
+        font-size: 80px;}
+    }
+
+footer{
+    text-align: center;
+    background-color: $bg-footer;
+    color: $color-footer;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+

@@ -1,0 +1,97 @@
+/*Familia*/
+
+.familia {
+    font-size: 1.7rem;
+    padding: 4rem;
+
+    .familiares {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .familiar {
+        background-color: $color-secundario;
+        color: $color-familia;
+        overflow: hidden;
+        display: flex;
+        width: 550px;
+        height: 800px;
+        padding: 5px;
+        border-radius: 1.2rem;
+        margin: 2rem;
+        @include familia;
+
+        &:hover img {
+            scale: 1.1;
+        }
+
+        &:hover {
+            box-shadow: 5px 15px 25px;
+        }
+
+        img {
+            height: 200px;
+            margin-top: 2rem;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+        }
+    }
+
+    .f-texto {
+        text-align: center;
+        font-size: 19px;
+        margin-bottom: 15px;
+    }
+
+    .f-titulo {
+        font-size: 50px;
+        margin-top: 5px;
+    }
+}
+
+
+/*Media Query Familia*/
+
+
+@media (max-width:1050px) 
+{  
+    .familia{ 
+        .familiar{
+        height: auto;
+        .f-texto{
+            font-size: 25px;
+            }
+        } 
+    } 
+}
+
+
+@media (max-width:650px) 
+{  
+    .familiar img{
+        display: none;
+    }
+    .familia {  
+        padding: 10px;
+    .familiar{
+        width: 600px;
+        height: auto;
+        padding: 1rem;
+        margin-bottom: 5px;
+        margin-left: 1px;
+        margin-right: 1px;
+            .f-titulo{
+                font-size: 35px;
+            }
+            .f-texto{
+                font-size: 25px;
+                justify-content: space-between;
+            }
+            .familia h1{
+                text-align: center;
+            }
+        } 
+    }
+}

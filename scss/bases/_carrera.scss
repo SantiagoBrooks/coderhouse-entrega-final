@@ -1,0 +1,50 @@
+/*Carrera*/
+//variables//
+
+
+
+.carrera{
+    background-color: $color-principal;
+            h2 {
+                text-align: center;
+                background-color: $color-secundario;
+                margin: 50px;
+                margin-bottom: 15px;
+                margin-top: 60px;
+            }
+
+        div {
+            @include carrera;
+            border: 5px solid $color-terciario;
+            img {
+                width: 300px;
+                height: 250px;
+                border-radius: 10px;
+            }
+
+            p {
+                font-size: 40px;
+                text-align: center;
+            }
+        }
+    }
+
+
+    /*Media Query Carrera*/
+
+
+@media (max-width:1050px){
+    .carrera div img{
+        display: none;
+    }  
+    .carrera div p{
+    text-align: center;
+    font-size:x-large
+    }
+}
+
+@media (max-width:650px){
+    .carrera div p{
+        font-size: x-large;
+    }
+}
